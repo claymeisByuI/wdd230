@@ -17,6 +17,48 @@ const assignments = [
         child:[
         ]
     },
+    {
+        label: "Lesson 05:",
+        url: "#" ,
+        child:[
+        ]
+    },
+    {
+        label: "Lesson 06:",
+        url: "#" ,
+        child:[
+        ]
+    },
+    {
+        label: "Lesson 07:",
+        url: "#" ,
+        child:[
+        ]
+    },    
+    {
+        label: "Lesson 08:",
+        url: "#" ,
+        child:[
+        ]
+    },
+    {
+        label: "Lesson 09:",
+        url: "#" ,
+        child:[
+        ]
+    },
+    {
+        label: "Lesson 10:",
+        url: "#" ,
+        child:[
+        ]
+    },
+    {
+        label: "Lesson 11:",
+        url: "#" ,
+        child:[
+        ]
+    },
 ]
 
 const createList = function(items, parentULElelement){
@@ -42,5 +84,10 @@ const createList = function(items, parentULElelement){
 }
 const listElement = document.getElementById("assignments")
 createList(assignments, listElement);
-const lastmodified = document.getElementById("lastmodified")
-lastmodified.innerText = "Last modified: " + (new Date(document.lastModified).toLocaleString('en-us'));
+
+setElementText("lastmodified", "Last modified: " + (new Date(document.lastModified).toLocaleString('en-us')))
+setElementText("copywriteyear", (new Date()).getFullYear());
+
+function setElementText(elementId, text){
+    document.getElementById(elementId).innerText = text;
+}
