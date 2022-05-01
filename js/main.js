@@ -1,7 +1,7 @@
 const assignments = [
     {
         label: "Lesson 02:",
-        url: "/lesson2/design-principles.html" ,
+        url: "lesson2/design-principles.html" ,
         child:[
         ]
     },
