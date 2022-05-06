@@ -10,6 +10,9 @@ main {
 header, nav, footer {
     height:100%;
 }
+footer {
+    flex-direction: column;
+}
 header,footer {
     max-width: 760px;
     display: flex;
@@ -67,7 +70,6 @@ article .example img{
     margin: auto;
     display: block;
     width:90%;
-    padding: auto auto;
     border: 1px solid black;
     border-radius: 6px;
 }
