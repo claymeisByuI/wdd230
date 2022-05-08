@@ -7,7 +7,7 @@ const assignments = [
     },
     {
         label: "Lesson 03:",
-        url: "#" ,
+        url: "lesson3/" ,
         child:[
         ]
     },
