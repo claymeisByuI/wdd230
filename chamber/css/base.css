@@ -1,0 +1,113 @@
+:root{
+  /******
+  *    These 4 items are the same as using them in the body rule
+  ********/
+  background-color: #dac5b2;
+  margin: 0px;
+  font-family: "Lora", sans-serif, serif;
+  box-sizing: border-box;
+  
+  /************************************************************
+  *
+  *               Variables
+  *
+  ************************************************************/
+  --heading-font: "Ubuntu", serif;
+  --heading-color: #30261D;
+  --accent-color: #3b2a1a;
+  --heading-background: #865d3d;
+  --color-white: #dac5b2;
+  --hover-color: #30261D;
+  --trans-color: rgba(196 207 207 / .7);
+  --headline-background: #967c63
+}
+.main{
+  display:grid;
+}
+header {
+  background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+  flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+  
+}
+.header-date{
+    grid-column-start: 1;
+    background: red;
+}
+/* Menu */
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: tomato;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: "🍔 ";
+}
+
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "❌ ";
+}
+main{ 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."; 
+  justify-content: space-between; 
+}
+
+article{
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #bbb;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
