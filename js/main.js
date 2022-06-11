@@ -37,7 +37,7 @@ const assignments = [
     },    
     {
         label: "Lesson 08:",
-        url: "#" ,
+        url: "lesson-8/tablebuild.html" ,
         child:[
         ]
     },

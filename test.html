@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .gridlayout {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: .25rem;
+  }
+  
+  .item {
+    grid-column: 2/3;
+  }
+  
+  .imgitem {
+    grid-row: ______;
+  }
+    </style>
+</head>
+<body>    
+  <div id="favorite-foods"></div>
+    <div class="gridlayout">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="imgitem">
+          <img src="https://placekitten.com/190/300">
+        </div>
+        <div class="item">4</div>
+      </div>
+    <script>
+const foodsElement = document.querySelector('#favorite-foods');
+function mapFoodItem(food) {
+  let favoriteFood = document.createElement('ul');
+  favoriteFood.textContent = food;
+  return favoriteFood;
+}
+let favoriteFoods = ["pizza", "tacos", "sushi"];
+const foodListElements = favoriteFoods.map(mapFoodItem);
+console.dir(foodListElements);
+// we need to flatten the array of strings into one big string. .join does this.
+foodsElement.append(...foodListElements);
+    </script>
+</body>
+</html>

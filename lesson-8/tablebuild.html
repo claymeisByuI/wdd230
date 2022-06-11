@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Table test discussion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/tablebuild.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="tableParent">
+        <table class="acmeTable">
+            <thead>
+                <tr>
+                    <th scope="colgroup" colspan="3">ACME Wildwest</th>
+                </tr>
+                <tr>
+                    <th scope="col" id="period">Name</th>
+                    <th scope="col" id="Sales">Sales</th>
+                    <th scope="col" id="Sales Goal">Sales Goal</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot> </tfoot>
+            <caption>compile 6.11.2022 by Clayton Meisman</caption>
+            <tr>
+                <td header="period">August</td>
+                <td header="sales">$3,590.00</td>
+                <td header="sales_goal">$4,000.00</td>
+            </tr>
+            <tr>
+                <td header="period">September</td>
+                <td header="sales">$4,420.00</td>
+                <td header="sales_goal">$5,000.00</td>
+            </tr>
+            <tr>
+                <td header="period">October</td>
+                <td header="sales">$4,870.00</td>
+                <td header="sales_goal">$5,000.00</td>
+            </tr>
+            <tr>
+                <td header="period">November</td>
+                <td header="sales">$8,610.00</td>
+                <td class="focus" header="sales_goal">$7,500.00</td>
+            </tr>
+            <tr class="holiday">
+                <td header="period">Black Friday</td>
+                <td header="sales" colspan="2">$3,200.00</td>
+            </tr>
+            <tr>
+                <td header="period">December</td>
+                <td header="sales">$6,820.00</td>
+                <td header="sales_goal">$7,500.00</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
