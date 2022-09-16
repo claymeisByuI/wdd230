@@ -1,0 +1,14 @@
+@media (min-width: 32.5em) {
+    main {
+        width: 32.5em;
+    }
+    header,footer {
+        max-width: 760px;
+        /* background-color: hsl(138, 100%, 53%); */
+        border-radius: 6px;
+        margin: auto auto;
+    }
+    footer {
+        flex-direction: row;
+    }
+}
