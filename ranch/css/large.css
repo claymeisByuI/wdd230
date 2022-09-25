@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1028px) {
+    nav,main, header, footer {
+        max-width:75rem;
+        margin:auto;
+    }
+    nav ul li {
+        padding-left: 2%;
+    }
+
+    nav ul li {
+        flex-basis:auto;
+    }
+
+    nav a {
+        padding: 0.5rem 1 em;
+    } 
+
+    main figure {
+        width:31%;
+    }
+
+    div.news{
+        column-count:3;
+    }
+
+}
