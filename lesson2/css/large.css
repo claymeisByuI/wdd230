@@ -5,5 +5,7 @@
         grid-gap: 10px;
         margin: 10px;
     }
-    
+    article:last-child { 
+        grid-column: unset;
+    }
 }
