@@ -1,0 +1,80 @@
+:root{
+    --main_color:hsl(41, 98%, 67%);
+}
+main {
+    display:grid;
+    grid-template-rows: 200px 1fr 100px;
+    max-width: 760px;
+    margin: auto auto;
+}
+header, nav, footer {
+    height:100%;
+}
+footer {
+    flex-direction: column;
+}
+header,footer {
+    max-width: 760px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main_color);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    width:100%;
+}
+article{
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 10px;
+    background-color: hsl(0, 0%, 95%);
+}
+header h1{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, h3 { 
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+h2 {
+    border-bottom: 2px solid black;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+article h2 {
+    background-color: var(--main_color);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+article .intro{
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+article .intro .company-name{
+    padding-bottom:4px;
+}
+
+article .example img{
+    margin: auto;
+    display: block;
+    width:90%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+article .example .example__explanation{
+    padding: 10px;
+    font-size: 1.5em;
+}
