@@ -1,3 +1,17 @@
+/* Variable section */
+:root{
+    /******
+    *    These 4 items are the same as using them in the body rule
+    ********/
+
+    /* ---1c5773 */
+    --body-color: #cee7f3;
+    --footer-color: #9ccfe7;
+    --header-color: var(--footer-color);
+    --menu-bar-color: #4aa8d3;
+    --menu-bar-selected: #1c5773;
+
+  }
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -9,13 +23,19 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    background-color: var(--body-color);
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: var(--header-color);
+    display: grid;
+    grid-template-columns: 75px auto;    
+}
+header div{
+    margin-left: 10px;
 }
 
 header h1 {margin: 0;}
@@ -23,7 +43,7 @@ header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: var(--menu-bar-color);
 }
 nav ul {
     list-style-type: none;
@@ -46,7 +66,7 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: var(--menu-bar-selected);
     color: #fff;
 }
 /*----------- MAIN --------------*/
@@ -58,7 +78,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: var(--footer-color);
     padding: .5rem 2%;
     text-align: center;
 }
