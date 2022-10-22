@@ -19,12 +19,17 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.webp" alt="logo">
         </div>
         <section class="headings">
             <h1>Bulverde Chamber of Commerce</h1>
             <h2>Bringing people together</h2>
         </section>    
+        <div class="social">
+            <a href="https://facebook.com" class="socialLink"><img src="images/fb.jpg" alt="facebook"></a>
+            <a href="https://twitter.com" class="socialLink"><img src="images/twitter.jpg" alt="twitter"></a>
+            <a href="https://linkedin.com" class="socialLink"><img src="images/linkedin.jpg" alt="linkedin"></a>            
+        </div>
         <div id="currentDate" class="dateHeader">
             Todays Date Here
         </div>    
@@ -42,10 +47,21 @@
     </nav>
     
     <main>
+        <picture class="grid--temp-hero">
+            <source media="(max-width:400px)" srcset="images/herosrc_400.jpg">
+            <source media="(max-width:650px)" srcset="images/herosrc_650.jpg">
+            <source media="(max-width:900px)" srcset="images/herosrc_900.jpg">
+            <img src="images/herosrc_1050.jpg" alt="hero image">
+        </picture>
         <article class="grid--hero">
             <div class="hero-container">
                 <h2>Welcome to Bulverde</h2>
-                <div class="image"><img src="images/wildflowers.jpg" alt="wildflowers" width="620" height="414"></div>
+                <picture class="image">
+                    <source media="(max-width:400px)" srcset="images/wildflowers_400.jpg">
+                    <source media="(max-width:650px)" srcset="images/wildflowers_650.jpg">
+                    <source media="(max-width:900px)" srcset="images/wildflowers_900.jpg">
+                    <img src="images/wildflowers_1050.jpg" alt="wildflowers" width="1050" height="590">
+                </picture>
                 <button>Join the Chamber</button>
             </div>
         </article>
@@ -56,12 +72,16 @@
         <article class="grid--weather">
             <h3>Weather</h3>
             <div class="weather-grid">
-                <div>Temperature: xx&deg;</div>
+                <picture class="image">
+                    <img src="images/icons8-partly-cloudy-day-64.png" alt="cloudy day">
+                </picture>
+                <div>Temperature: <span id="tempurature">20</span>&deg;</div>
                 <div>Condition: Partly Cloudy</div>
-                <div>Wind Speed: Xmph</div>
-                <div>Whind Chill: X&deg;</div>
+                <div>Wind Speed: <span id="windspeed">2.5</span>mph</div>
+                <div>Wind Chill: <span id="windchill">X</span>&deg;</div>
                 
             </div>
+            <small><a target="_blank" href="https://icons8.com/icon/118777/clouds">Clouds</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></small>
         </article>
         <article class="grid--news">
             <h3>News Release</h3>
@@ -93,7 +113,7 @@
     
     <footer>
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.webp" alt="logo">
         </div>
         <section class="details">
             <h3>Bulverde Chamber of Commerce</h3>
@@ -113,5 +133,6 @@
     </footer>
     
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
