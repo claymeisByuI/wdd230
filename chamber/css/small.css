@@ -245,9 +245,17 @@ button:hover {
     width:100px;
     margin: auto;
 }
+.grid--spotlight-2 .image{
+    width:100px;
+    margin: auto;
+}
 .grid--spotlight-1 .image img{
     width:100%;
 }
+.grid--spotlight-2 .image img{
+    width:100%;
+}
+
 .grid--spotlight-2 p, .grid--spotlight-1 p{
     font-size: .75em;
 }
