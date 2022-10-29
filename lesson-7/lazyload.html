@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="lazy load example">
+    <meta name="author" content="Clayton Meisman">
+    <title>Lazy load test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/small.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Lazy loading</h1>
+        <picture><img loading="lazy" src="img/placeholder.png" alt="kitten" data-src="https://placekitten.com/300/400"></picture>
+        <picture><img loading="lazy" src="img/placeholder.png" alt="" data-src="https://picsum.photos/300/400"></picture>
+        <picture><img loading="lazy" src="img/placeholder.png" alt="" data-src="https://picsum.photos/300/400?grayscale"></picture>
+        <picture><img loading="lazy" src="img/placeholder.png" alt="" data-src="https://picsum.photos/300/400?blur"></picture>
+        <picture><img loading="lazy" src="img/placeholder.png" alt="" data-src="https://picsum.photos/300/400.webp"></picture>
+    </main>
+    <script src="js/imagehandling.js" defer></script>
+</body>
+</html>
