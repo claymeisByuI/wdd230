@@ -1,0 +1,69 @@
+.tableParent{
+    overflow-x: auto;
+    width:100%;
+    height:100%
+}
+.claysTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    text-align: left;
+    border-collapse: collapse;
+    width:300px;
+}
+.claysTable td, .claysTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+.claysTable tbody td {
+    text-align: center;
+    font-size: 13px;
+}
+.claysTable .highlight{
+    background: #1C6EA4;
+    color: #FFFFFF;
+
+}
+.claysTable tbody td.focus{
+    background-color: #1C6EA4;
+    color: #FFFFFF;
+}
+.claysTable tbody td {
+    font-size: 13px;
+}
+.claysTable tbody tr td[header="sales"]{
+    text-align: center;
+}
+.claysTable tbody tr:nth-child(even) {
+    background: #D0E4F5;
+}
+.claysTable thead {
+    background: #1C6EA4;
+    border-bottom: 2px solid #444444;
+}
+.claysTable thead tr:first-child{
+    background: #83adc9;
+    color:black;
+    border-bottom: 2px solid #444444;
+}
+.claysTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #D0E4F5;
+}
+.claysTable thead th:first-child {
+    border-left: none;
+}
+
+.claysTable td:hover{
+    outline: 2px solid yellow;
+}
+
+@media (min-width: 30rem) {
+    .claysTable {
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
