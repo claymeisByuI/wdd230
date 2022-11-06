@@ -64,8 +64,9 @@
         opacity: .5;
     }
     /* Join */
-    main:has(form){
-        display:block
+    main form{
+        grid-area: 1/1/1/3;
+        width:90%
     }
 
     
