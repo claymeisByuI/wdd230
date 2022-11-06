@@ -1,11 +1,22 @@
 function setElementText(elementId, text){
-    document.querySelector(elementId).innerText = text;
+    const element = document.querySelector(elementId);
+    if(element){
+        element.innerText = text;
+    }
 }
 
 // Using the + to force the elements to a number
-const tempurature = + document.getElementById("tempurature").innerText;
-const windspeed = + document.getElementById("windspeed").innerText;
-const windchill = windChill(tempurature,windspeed)
+const tempuratureElement = document.getElementById("tempurature");
+let tempurature = 0;
+let windspeed = 0;
+if(tempuratureElement){
+    tempurature = + tempuratureElement.innerText;
+}
+const windspeedElement = document.getElementById("windspeed");
+if(windspeedElement){
+    windspeed = + windspeedElement.innerText;
+}
+const windchill = windChill(tempurature, windspeed)
 
 setElementText("#windchill", windchill);
 

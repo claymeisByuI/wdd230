@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bulverde Chamber of Commerce Discovery">
+    <title>Join Us</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <section class="headings">
+            <h1>Join Us</h1>
+        </section>    
+        <div class="social">
+            <a href="https://facebook.com" class="socialLink"><img src="images/fb.jpg" alt="facebook"></a>
+            <a href="https://twitter.com" class="socialLink"><img src="images/twitter.jpg" alt="twitter"></a>
+            <a href="https://linkedin.com" class="socialLink"><img src="images/linkedin.jpg" alt="linkedin"></a>            
+        </div>
+        <div id="currentDate" class="dateHeader">
+            Todays Date Here
+        </div>    
+        <div class="banner" id="banner"></div>
+    </header>   
+    
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li ><a href="discover.html">Discover</a></li>
+            <li ><a href="index.html">Directory</a></li>
+            <li class="active"><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    
+    <main>
+        <form method="get" action="thankyou.html" class="">
+            <fieldset>
+                <legend> Personal Information</legend>
+                <div class="input-group">
+                    <label for="first" required>First Name
+                        <input type="text" name="first" id="first" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label required for="last">Last Name
+                        <input type="text" name="last" id="last" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="" for="title" >Title
+                        <input type="text" name="title" id="title" pattern="[a-zA-Z0-9.- ]{7,25}">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label required for="email">Email
+                        <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label required for="phone">Phone
+                        <input type="tel" name="phone" id="phone" placeholder="1235551234" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="" for="business-title">Business Title
+                        <input type="text" name="business-title" id="business-title" required>
+                    </label>
+                </div>
+            </fieldset>  
+            
+            <fieldset class="split">
+                <legend> Business Information</legend>                   
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="label-radio"><input type="radio" name="membership-level" value="np">NP Membership</label>
+                    <label class="label-radio"><input type="radio" name="membership-level" value="bronze">Bronze Membership</label>
+                    <label class="label-radio"><input type="radio" name="membership-level" value="silver">Silver Membership</label>
+                    <label class="label-radio"><input type="radio" name="membership-level" value="gold">Gold Membership</label>
+                </fieldset>
+                <div class="input-group">
+                    <label class="" for="description" >Business Description
+                        <textarea id="description" name="description" id="description" rows="15" cols="25"></textarea>
+                    </label>
+                </div>
+                
+                
+            </fieldset>
+            
+            <label id="date"></label> 
+            
+            <input type="submit" value="Join the Chamber" class="submitButton">
+            
+        </form>
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <section class="details">
+            <h3>Bulverde Chamber of Commerce</h3>
+            <p>Address line 1</p>
+            <p>City, State, Zip</p>
+        </section>    
+        <section class="communication-details">
+            <h3><a href="mailto:email@address.org">email@address.org</a></h3>
+            <h3><a href="tel:8005551212">(800)555-1212</a></h3>
+        </section>    
+        <section class="location-details">
+            <h3><a href="https://goo.gl/maps/oDMx9J3UszsBUNgF8">Link to Map</a></h3>
+        </section>    
+        <section class="location-copyright">
+            <h3>© 2022 Bulverde Chamber | Clayton Meisman | WDD 230 Project | Last Modification <span id="lastmodified">xx/xx/xxxx xx:xx:xx</span></h3>
+            <h3>Days Since Last Visit:<span id="daysSincePageVisit">0 </span> Days | Last Visited On:<span id="lastVisitedOn">xx/xx/xxxx xx:xx:xx</span></h3>
+        </section>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>

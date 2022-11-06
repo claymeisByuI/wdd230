@@ -63,4 +63,10 @@
     img:hover{
         opacity: .5;
     }
+    /* Join */
+    main:has(form){
+        display:block
+    }
+
+    
 }
