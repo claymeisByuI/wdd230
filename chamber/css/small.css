@@ -269,8 +269,10 @@ button:hover {
     width: 25px;
 }
 
-/* Join */
-label[required]::before {
+/* Join 
+wanted to use for but firefox has limited support
+label:has(input[required])::before { */
+label.required::before {
     content: "*";
     color: red;
 }

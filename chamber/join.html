@@ -39,7 +39,7 @@
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
             <li ><a href="discover.html">Discover</a></li>
-            <li ><a href="index.html">Directory</a></li>
+            <li ><a href="directory.html">Directory</a></li>
             <li class="active"><a href="#">Join</a></li>
             <li><a href="#">Contact</a></li>    
         </ul>
@@ -50,32 +50,32 @@
             <fieldset>
                 <legend> Personal Information</legend>
                 <div class="input-group">
-                    <label for="first" required>First Name
+                    <label for="first" class="required">First Name
                         <input type="text" name="first" id="first" required>
                     </label>
                 </div>
                 <div class="input-group">
-                    <label required for="last">Last Name
+                    <label for="last" class="required">Last Name
                         <input type="text" name="last" id="last" required>
                     </label>
                 </div>
                 <div class="input-group">
-                    <label class="" for="title" >Title
+                    <label for="title" >Title
                         <input type="text" name="title" id="title" pattern="[a-zA-Z0-9.- ]{7,25}">
                     </label>
                 </div>
                 <div class="input-group">
-                    <label required for="email">Email
+                    <label for="email" class="required">Email
                         <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
                     </label>
                 </div>
                 <div class="input-group">
-                    <label required for="phone">Phone
+                    <label for="phone" class="required">Phone
                         <input type="tel" name="phone" id="phone" placeholder="1235551234" required>
                     </label>
                 </div>
                 <div class="input-group">
-                    <label class="" for="business-title">Business Title
+                    <label class="required" for="business-title">Business Title
                         <input type="text" name="business-title" id="business-title" required>
                     </label>
                 </div>
@@ -92,15 +92,11 @@
                 </fieldset>
                 <div class="input-group">
                     <label class="" for="description" >Business Description
-                        <textarea id="description" name="description" id="description" rows="15" cols="25"></textarea>
+                        <textarea id="description" name="description" rows="15" cols="25"></textarea>
                     </label>
                 </div>
-                
-                
             </fieldset>
-            
-            <label id="date"></label> 
-            
+            <input id="date" name="FilledInDate">
             <input type="submit" value="Join the Chamber" class="submitButton">
             
         </form>
