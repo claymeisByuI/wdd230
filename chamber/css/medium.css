@@ -49,7 +49,7 @@
         grid-area: 1 / 3 / 1 / 4;
         justify-self: right;
         text-align: right;
-        }
+    }
     footer .location-details{
         grid-area: 2 / 3 / 2 / 4;
         justify-self: right;
@@ -59,7 +59,7 @@
         grid-area: 3 / 1 / 3 / 4;
         justify-self: center;
     }
- 
+    
     img:hover{
         opacity: .5;
     }
@@ -68,6 +68,32 @@
         grid-area: 1/1/1/3;
         width:90%
     }
-
+    /* Directory */
+    main.grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     
+    main.grid section {
+        margin: 0.25rem;
+        padding: 0.35rem;
+        background-color: var(--primary-color);
+        border: 1px solid rgb(117, 117, 117);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 16rem;
+        min-width: 16rem;
+    }
+    main.grid section > p {
+        min-height: 10px;
+        margin: 0px;
+    }
+    
+    main.grid section > h2 {
+        width:100%;
+        text-align: center;
+        border-bottom: solid 1px var(--header-color);
+    }
 }

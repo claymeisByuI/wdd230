@@ -269,9 +269,7 @@ button:hover {
     width: 25px;
 }
 
-/* Join 
-wanted to use for but firefox has limited support
-label:has(input[required])::before { */
+/* Join */
 label.required::before {
     content: "*";
     color: red;
@@ -360,3 +358,56 @@ form label input:required:valid{
 }
 
 
+/* Directory */
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+}
+
+main.grid {
+    display: block;
+}
+
+main.list {
+    display: flex;
+    flex-direction:column;
+}
+
+main.list section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    align-items:baseline;
+}
+main.grid section {
+    margin: 1rem 0.5rem;
+    padding: 0.35rem;
+    background-color: var(--primary-color);
+    border: 1px solid rgb(117, 117, 117);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.grid section > p {
+    min-height: 20px;
+    margin: 4px;
+}
+
+main.grid section > h2 {
+    width:100%;
+    text-align: center;
+    border-bottom: solid 1px var(--header-color);
+}
+
+main.list section > h2 {
+    text-align: left;
+    font-size:1rem;
+}
