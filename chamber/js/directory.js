@@ -22,6 +22,7 @@ function displayBusiness(business) {
     let CityStateZip = document.createElement('p');
     let Phone = document.createElement('p');
     let portrait = document.createElement('img');
+    let link = document.createElement('p');
   
     // Change the textContent property of the h2 element to contain the business's full name
     h2.textContent = `${business.name}`;
@@ -29,6 +30,9 @@ function displayBusiness(business) {
     Address.textContent = `${business.Address}`;
     CityStateZip.textContent = `${business.CityStateZip}`;
     Phone.setHTML(`<a href="tel:${business.Phone}">${business.Phone}</a>`);
+    if(business.url){
+        link.setHTML(`<a href="${business.url}" target="_blank">Website</a>`);
+    }
     
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', business.logo);
@@ -41,6 +45,9 @@ function displayBusiness(business) {
     card.appendChild(Address);
     card.appendChild(CityStateZip);
     card.appendChild(Phone);
+    if(business.url){
+        card.appendChild(link);
+    }
     
     // Add/append the existing HTML div with the cards class with the section(card)
     directory.appendChild(card);
