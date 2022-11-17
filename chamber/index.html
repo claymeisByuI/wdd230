@@ -68,15 +68,15 @@
             <h3>Weather</h3>
             <div class="weather-grid">
                 <picture class="image">
-                    <img src="images/icons8-partly-cloudy-day-64.png" alt="cloudy day">
+                    <img id="weather-icon" src="images/icons8-partly-cloudy-day-64.png" alt="cloudy day">
                 </picture>
                 <div>Temperature: <span id="tempurature">20</span>&deg;</div>
-                <div>Condition: Partly Cloudy</div>
+                <div id="weather-desc" >Condition: Partly Cloudy</div>
                 <div>Wind Speed: <span id="windspeed">2.5</span>mph</div>
                 <div>Wind Chill: <span id="windchill">X</span>&deg;</div>
                 
             </div>
-            <small><a target="_blank" href="https://icons8.com/icon/118777/clouds">Clouds</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></small>
+            <small><a target="_blank" href="https://openweathermap.org/">Weather Provided by openweathermap</small>
         </article>
         <article class="grid--news">
             <h3>News Release</h3>
@@ -130,5 +130,6 @@
     
     <script src="js/scripts.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 </html>
