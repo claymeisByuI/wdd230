@@ -2,17 +2,19 @@
 "Address":"318 Berry Oaks Dr",
 "CityStateZip":"Bulverde, TX 78163",
 "Phone":"432-230-7757",
-"membership-level":"np",
+"membership-level":"gold",
 "logo":"images/logoipsum-223.svg",
-"url": "https://davescarpet.com/"
+"url": "https://davescarpet.com/",
+"email": "Dave@davescarpet.com"
 },
 {"name":"DCT Morgan Farm",
 "Address":"6420 Fm 1863",
 "CityStateZip":"Bulverde, TX 78163",
 "Phone":"830-438-1114",
-"membership-level":"np",
+"membership-level":"gold",
 "logo":"images/logoipsum-225.svg",
-"url": "https://www.equinenow.com/farm-id-113405"
+"url": "https://www.equinenow.com/farm-id-113405",
+"email": "Morgan@equinenow.com"
 },
 {"name":"Dean Baldwin Painting",
 "Address":"2315 Bulverde Rd, Ste 105",
@@ -20,7 +22,8 @@
 "Phone":"830-438-5340",
 "membership-level":"np",
 "logo":"images/logoipsum-235.svg",
-"url": "https://www.deanbaldwinpainting.com/texas"
+"url": "https://www.deanbaldwinpainting.com/texas",
+"email": "Dean@deanbaldwinpainting.com"
 },
 {"name":"ABCD Pediatrics - Bulverde",
 "Address":"121 Bulverde Crossing Rd",
@@ -28,7 +31,8 @@
 "Phone":"210-411-6400",
 "membership-level":"np",
 "logo":"images/logoipsum-247.svg",
-"url": "https://www.abcdpediatrics.com/locations/bulverde-location/"
+"url": "https://www.abcdpediatrics.com/locations/bulverde-location/",
+"email": "Pediatrics@abcdpediatrics.com"
 },
 {"name":"Action Magazine",
 "Address":"4825 Elm Creek Dr",
@@ -36,15 +40,17 @@
 "Phone":"830-180-7861",
 "membership-level":"np",
 "logo":"images/logoipsum-248.svg",
-"url": "https://actionmagsa.com/"
+"url": "https://actionmagsa.com/",
+"email": "Action@actionmagsa.com"
 },
 {"name":"Baker Dan C",
 "Address":"13 Po Box",
 "CityStateZip":"Bulverde, TX 78163",
 "Phone":"830-438-2218",
-"membership-level":"np",
+"membership-level":"gold",
 "logo":"images/logoipsum-274.svg",
-"url": "https://www.danbakerstrength.com/"
+"url": "https://www.danbakerstrength.com/",
+"email": "contact@danbakerstrength.com"
 },
 {"name":"Barber 281",
 "Address":"21774 Us Highway 281 N, Ste 220",
@@ -52,7 +58,8 @@
 "Phone":"830-438-8002",
 "membership-level":"np",
 "logo":"images/logoipsum-287.svg",
-"url": "https://www.facebook.com/pages/category/carpet-cleaner/Daves-Carpet-Cleaning-1394088620844782/"
+"url": "https://www.facebook.com/pages/category/carpet-cleaner/Daves-Carpet-Cleaning-1394088620844782/",
+"email": "contact@facebook.com"
 },
 {"name":"Bargain Barn Antique Village",
 "Address":"21630 Us Highway 281 N",
@@ -60,15 +67,17 @@
 "Phone":"830-438-2686",
 "membership-level":"np",
 "logo":"images/logoipsum-290.svg",
-"url": "https://bargain-barn-antique-village.hub.biz/"
+"url": "https://bargain-barn-antique-village.hub.biz/",
+"email": "contact@bargain-barn.com"
 },
 {"name":"Mann Michael W & Manie",
 "Address":"32665 Us Highway 281 N",
 "CityStateZip":"Bulverde, TX 78163",
 "Phone":"830-180-1607",
-"membership-level":"np",
+"membership-level":"silver",
 "logo":"images/logoipsum-287.svg",
-"url": "https://michaelmann.net/"
+"url": "https://michaelmann.net/",
+"email": "contact@michaelmann.net"
 },
 {"name":"Mapa Distributors LLC",
 "Address":"32041 Blanco Rd",
@@ -76,13 +85,15 @@
 "Phone":"830-438-5715",
 "membership-level":"np",
 "logo":"images/logoipsum-247.svg",
-"url": "http://www.mapadistributors.com/"
+"url": "http://www.mapadistributors.com/",
+"email": "contact@.mapadistributors.com"
 },
 {"name":"Smithson Valley Counseling Center",
 "Address":"32416 Us Highway 281 N, Lot B",
 "CityStateZip":"Bulverde, TX 78163",
 "Phone":"830-438-3100",
-"membership-level":"np",
+"membership-level":"silver",
 "logo":"images/logoipsum-225.svg",
-"url": "https://smithsonvalleycounseling.com/"
+"url": "https://smithsonvalleycounseling.com/",
+"email": "contact@smithsonvalleycounseling.com"
 }]

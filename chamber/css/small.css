@@ -282,11 +282,16 @@ main form{
     max-width: 80%;
     margin: auto;
 }
+main .content form{
+    text-align: center;
+    display:block;
+}
 
 main form{
     text-align: center;
     
 }
+
 
 main form fieldset {
     margin: 2rem 0;

@@ -3,6 +3,14 @@
     nav ul li a{
         padding: .5rem 1rem;
     }
+    main.cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
     main {
         margin: auto;
         display: grid;
