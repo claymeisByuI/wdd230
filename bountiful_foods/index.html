@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bulverde Chamber of Commerce Reference Page">
+    <title>Bulverde Chamber of Commerce</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
+        </div>
+        <section class="headings">
+            <h1>Bountiful Foods</h1>
+            <!-- <h2>Bringing people together</h2> -->
+        </section>    
+        <div class="social">
+            <a href="https://facebook.com" class="socialLink"><img src="images/fb.jpg" alt="facebook"></a>
+            <a href="https://twitter.com" class="socialLink"><img src="images/twitter.jpg" alt="twitter"></a>
+            <a href="https://linkedin.com" class="socialLink"><img src="images/linkedin.jpg" alt="linkedin"></a>            
+        </div>
+        <div id="currentDate" class="dateHeader">
+            Todays Date Here
+        </div>    
+        <div class="banner" id="banner"></div>
+    </header>   
+    
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="fresh.html">Fresh</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article class="grid--make">
+            <div class="hero-container">
+                <h2>Make yourself a Drink</h2>
+                <picture class="image">
+                    <source media="(max-width:400px)" srcset="images/wildflowers_400.jpg">
+                    <source media="(max-width:650px)" srcset="images/wildflowers_650.jpg">
+                    <source media="(max-width:900px)" srcset="images/wildflowers_900.jpg">
+                    <img src="images/wildflowers_1050.jpg" alt="wildflowers" width="1050" height="590">
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum vero excepturi sed commodi assumenda enim expedita nesciunt sint repudiandae asperiores soluta nobis voluptate velit eos delectus accusantium dignissimos, obcaecati optio perspiciatis blanditiis nihil dolorum. Fugit accusamus laborum quae sed libero soluta itaque nam explicabo culpa earum. Laborum, quia facilis!</p>
+                <button onclick="location.href = 'join.html';">Fresh</button>
+            </div>
+        </article>
+        <article class="grid--CostalInfo">
+            <h3>Costal Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque reprehenderit numquam laborum et atque impedit incidunt dolor! Nemo sunt quisquam exercitationem vel, dolorem impedit optio tempora ducimus atque sint dolor consequatur architecto inventore deleniti saepe perferendis culpa vitae voluptatum, quis assumenda delectus fuga explicabo! Magnam ducimus eum voluptates placeat. <a href="#">more Info ...</a></p>
+        </article>
+        <article class="grid--weather">
+            <h3>Weather</h3>
+            <div class="weather-grid">
+                <picture class="image">
+                    <img id="weather-icon" src="images/noweather.png" alt="cloudy day">
+                </picture>
+                <div>Temperature: <span id="tempurature">N/A</span>&deg;</div>
+                <div>Condition: <span id="weather-desc">N/A</span></div>
+                <div>Wind Speed: <span id="windspeed">N/A</span>mph</div>
+                <div>Wind Chill: <span id="windchill">N/A</span>&deg;</div>
+                
+            </div>
+            <small><a target="_blank" href="https://openweathermap.org/">Weather Provided by openweathermap</a></small>
+        </article>
+        <article class="grid--contact">
+            <h3>Business Contact Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eligendi. Eaque perspiciatis laudantium ullam nulla, numquam tempore doloribus! Voluptas voluptate sequi praesentium ipsum quae at est ea tenetur laudantium quos molestias eveniet ad, ducimus, vero ipsam. Tempora ad unde ea et nobis magnam ducimus? Quibusdam autem mollitia impedit eaque facilis.!</p>
+        </article>
+    </main>
+    
+    <footer>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <section class="details">
+            <h3>Bulverde Chamber of Commerce</h3>
+            <p>Address line 1</p>
+            <p>City, State, Zip</p>
+        </section>    
+        <section class="communication-details">
+            <h3><a href="mailto:email@address.org">email@address.org</a></h3>
+            <h3><a href="tel:8005551212">(800)555-1212</a></h3>
+        </section>    
+        <section class="location-details">
+            <h3><a href="https://goo.gl/maps/oDMx9J3UszsBUNgF8">Link to Map</a></h3>
+        </section>    
+        <section class="location-copyright">
+            <h3>© 2022 Bulverde Chamber | Clayton Meisman | WDD 230 Project | Last Modification <span id="lastmodified">xx/xx/xxxx xx:xx:xx</span></h3>
+            <h3>Days Since Last Visit:<span id="daysSincePageVisit">0</span> Days | Last Visited On:<span id="lastVisitedOn">xx/xx/xxxx xx:xx:xx</span></h3>
+        </section>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+</html>
