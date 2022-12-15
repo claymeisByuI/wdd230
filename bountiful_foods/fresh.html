@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Bulverde Chamber of Commerce Reference Page">
+    <title>Bulverde Chamber of Commerce</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="logo-wrapper" href="index.html"><img src="images/logo.webp" alt="logo"></a>
+        </div>
+        <section class="headings">
+            <h1>Bountiful Foods</h1>
+            <!-- <h2>Bringing people together</h2> -->
+        </section>
+        <div class="social">
+            <a href="https://facebook.com" class="socialLink"><img src="images/fb.jpg" alt="facebook"></a>
+            <a href="https://twitter.com" class="socialLink"><img src="images/twitter.jpg" alt="twitter"></a>
+            <a href="https://linkedin.com" class="socialLink"><img src="images/linkedin.jpg" alt="linkedin"></a>
+        </div>
+    </header>
+    
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li ><a href="index.html">Home</a></li>
+            <li class="active"><a href="fresh.html">Fresh</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article class="grid--contact">
+            <h3>Place an Order</h3>
+            <div class="orderPlaced hidden">
+                <p>Thanks <span id="orderedName"></span> for ordering your delicious drink</p>
+                <p>We will email your receipt to <span id="orderedEmail"></span></p>
+                <p>We will Text you when your order is ready to <span id="orderedText"></span></p>
+                <p>And you wanted the following in your drink:</p>
+                <ol id="orderedItems"></ol>
+            </div>
+            <div class="content">
+                <form class="freshForm" id="freshForm">
+                        <div class="input-group">
+                            <label for="name" class="required">First Name
+                                <input type="text" name="name" id="name" required>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="required">Email
+                                <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="required">Phone
+                                <input type="tel" name="phone" id="phone" placeholder="1235551234" required>
+                            </label>
+                        </div>
+                        <div class="fruit-1">
+                            
+                            <label for="selectFruit1" class="">Fruit
+                                <select id="selectFruit1" name="fruit1">
+                                    <option>Choose a fruit</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="fruit-2">
+                            <label for="selectFruit2" class="">Fruit
+                                <select id="selectFruit2" name="fruit2">
+                                    <option>Choose a fruit</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="fruit-3">
+                            <label for="selectFruit2" class="">Fruit
+                                <select id="selectFruit3" name="fruit3">
+                                    <option>Choose a fruit</option>
+                                </select>
+                            </label>
+                        </div>
+                    <input id="date" name="FilledInDate">
+                    <input type="button" value="Submit" class="submitButton" onclick="submit_order()">
+                    
+                </form>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <section class="details">
+            <h3>Bountiful Foods</h3>
+            <p><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">735 S Petit Ave</a></p>
+            <p><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">Ventura, CA 93003</a></p>
+        </section>
+        <section class="communication-details">
+            <h3><a href="mailto:contact@BountifulFoods.org">contact@BountifulFoods.org</a></h3>
+            <h3><a href="tel:202-762-1401">202-762-1401</a></h3>
+        </section>
+        <section class="location-details">
+            <h3><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">Link to Map</a></h3>
+        </section>
+        <section class="location-copyright">
+            <h3>© 2022 Bountiful Foods | Clayton Meisman | WDD 230 Project | Last Modification <span id="lastmodified">xx/xx/xxxx xx:xx:xx</span></h3>
+            <h3>Days Since Last Visit:<span id="daysSincePageVisit">0</span> Days | Last Visited On:<span id="lastVisitedOn">xx/xx/xxxx xx:xx:xx</span></h3>
+        </section>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/fresh.js"></script>
+</body>
+</html>

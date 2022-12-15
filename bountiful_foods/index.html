@@ -48,14 +48,14 @@
         <article class="grid--make">
             <div class="hero-container">
                 <h2>Make yourself a Drink</h2>
-                <picture class="image">
-                    <source media="(max-width:400px)" srcset="images/wildflowers_400.jpg">
-                    <source media="(max-width:650px)" srcset="images/wildflowers_650.jpg">
-                    <source media="(max-width:900px)" srcset="images/wildflowers_900.jpg">
-                    <img src="images/wildflowers_1050.jpg" alt="wildflowers" width="1050" height="590">
+                <picture class="9900">
+                    <source media="(max-width:400px)" srcset="images/freshbackground-400.jpg">
+                    <source media="(max-width:650px)" srcset="images/freshbackground-650.jpg">
+                    <source media="(max-width:900px)" srcset="images/freshbackground-900.jpg">
+                    <img src="images/freshbackground-1537.jpg" alt="wildflowers" width="1050" height="590">
                 </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum vero excepturi sed commodi assumenda enim expedita nesciunt sint repudiandae asperiores soluta nobis voluptate velit eos delectus accusantium dignissimos, obcaecati optio perspiciatis blanditiis nihil dolorum. Fugit accusamus laborum quae sed libero soluta itaque nam explicabo culpa earum. Laborum, quia facilis!</p>
-                <button onclick="location.href = 'join.html';">Fresh</button>
+                <p>Order yourself a fresh refreshing drink now!</p>
+                <button onclick="location.href = 'fresh.html';">Order a Drink Now</button>
             </div>
         </article>
         <article class="grid--CostalInfo">
@@ -65,14 +65,37 @@
         <article class="grid--weather">
             <h3><span id="weatherCity"></span>Weather</h3>
             <div class="weather-grid">
-                <picture class="image">
-                    <img id="weather-icon" src="images/noweather.png" alt="cloudy day">
-                </picture>
-                <div>Temperature: <span id="tempurature">N/A</span>&deg;</div>
-                <div>Condition: <span id="weather-desc">N/A</span></div>
-                <div>Wind Speed: <span id="windspeed">N/A</span>mph</div>
-                <div>Wind Chill: <span id="windchill">N/A</span>&deg;</div>
-                
+                <div class="weather-current">
+                    <h4>Todays Weather</h4>
+                    <picture class="image">
+                        <img id="weather-icon" src="images/noweather.png" alt="cloudy day">
+                    </picture>
+                    <div>Temperature: <span id="tempurature">N/A</span>&deg;</div>
+                    <div>Condition: <span id="weather-desc">N/A</span></div>
+                    <div>Wind Speed: <span id="windspeed">N/A</span>mph</div>
+                    <div>Wind Chill: <span id="windchill">N/A</span>&deg;</div>
+                </div>
+                <div class="weather-day-1" id="weather-day-1">
+                    <h4><span class="dayOfWeek">tomorrows</span> Weather</h4>
+                    <picture class="image">
+                        <img class="weather-icon" src="images/noweather.png" alt="cloudy day">
+                    </picture>
+                    <div>Temperature: <span class="tempurature">N/A</span>&deg;</div>
+                </div>
+                <div class="weather-day-2" id="weather-day-2">
+                    <h4><span class="dayOfWeek">tomorrows</span> Weather</h4>
+                    <picture class="image">
+                        <img class="weather-icon" src="images/noweather.png" alt="cloudy day">
+                    </picture>
+                    <div>Temperature: <span class="tempurature">N/A</span>&deg;</div>
+                </div>
+                <div class="weather-day-3" id="weather-day-3">
+                    <h4><span class="dayOfWeek">tomorrows</span> Weather</h4>
+                    <picture class="image">
+                        <img class="weather-icon" src="images/noweather.png" alt="cloudy day">
+                    </picture>
+                    <div>Temperature: <span class="tempurature">N/A</span>&deg;</div>
+                </div>
             </div>
             <small><a target="_blank" href="https://openweathermap.org/">Weather Provided by openweathermap</a></small>
         </article>
@@ -81,7 +104,9 @@
             <div class="locationPhone"><p>Call us at: <a href="tel:202-762-1401">202-762-1401</a></p></div>
             <div class="location">
                 <p>Location at: <a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">735 S Petit Ave, Ventura, CA 93003</a></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.9232031610627!2d-119.17705208445115!3d34.27601048054556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e84cd21206d08b%3A0x45eb4fb4c74e47e8!2s735%20S%20Petit%20Ave%2C%20Ventura%2C%20CA%2093004!5e0!3m2!1sen!2sus!4v1671074385764!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.9232031610627!2d-119.17705208445115!3d34.27601048054556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e84cd21206d08b%3A0x45eb4fb4c74e47e8!2s735%20S%20Petit%20Ave%2C%20Ventura%2C%20CA%2093004!5e0!3m2!1sen!2sus!4v1671074385764!5m2!1sen!2sus" height="450" style="border:0;width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+                
         </article>
     </main>
     
@@ -90,19 +115,19 @@
             <img src="images/logo.webp" alt="logo">
         </div>
         <section class="details">
-            <h3>Bulverde Chamber of Commerce</h3>
-            <p>Address line 1</p>
-            <p>City, State, Zip</p>
+            <h3>Bountiful Foods</h3>
+            <p><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">735 S Petit Ave</a></p>
+            <p><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">Ventura, CA 93003</a></p>
         </section>    
         <section class="communication-details">
-            <h3><a href="mailto:email@address.org">email@address.org</a></h3>
-            <h3><a href="tel:8005551212">(800)555-1212</a></h3>
+            <h3><a href="mailto:contact@BountifulFoods.org">contact@BountifulFoods.org</a></h3>
+            <h3><a href="tel:202-762-1401">202-762-1401</a></h3>
         </section>    
         <section class="location-details">
-            <h3><a href="https://goo.gl/maps/oDMx9J3UszsBUNgF8">Link to Map</a></h3>
+            <h3><a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">Link to Map</a></h3>
         </section>    
         <section class="location-copyright">
-            <h3>© 2022 Bulverde Chamber | Clayton Meisman | WDD 230 Project | Last Modification <span id="lastmodified">xx/xx/xxxx xx:xx:xx</span></h3>
+            <h3>© 2022 Bountiful Foods | Clayton Meisman | WDD 230 Project | Last Modification <span id="lastmodified">xx/xx/xxxx xx:xx:xx</span></h3>
             <h3>Days Since Last Visit:<span id="daysSincePageVisit">0</span> Days | Last Visited On:<span id="lastVisitedOn">xx/xx/xxxx xx:xx:xx</span></h3>
         </section>
     </footer>

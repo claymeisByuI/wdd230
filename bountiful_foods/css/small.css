@@ -188,6 +188,9 @@ main {
     grid-row-gap: 0px;
 }
 
+.hidden{
+    display:none;
+}
 
 article{
     background-color: #fff;
@@ -214,11 +217,14 @@ article{
 .hero-container button{
     float:right;
     position:absolute;
-    bottom: 32px;
     right: 16px;
+    top: 16px;
 }
 h2, h3{
     margin: .25rem;
+}
+h4, h5{
+    margin: .20rem;
 }
 
 button {
@@ -243,7 +249,7 @@ button:hover {
     font-size: 16px;
     border-radius: 10px;
 }
-.grid--hero img {
+.grid--make img {
     width:100%;
     height:auto;
 }
