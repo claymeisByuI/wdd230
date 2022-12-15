@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/logo.webp" alt="logo"></a>
+            <a class="logo-wrapper" href="index.html"><img src="images/logo.webp" alt="logo"></a>
         </div>
         <section class="headings">
             <h1>Bountiful Foods</h1>
@@ -30,10 +30,9 @@
             <a href="https://twitter.com" class="socialLink"><img src="images/twitter.jpg" alt="twitter"></a>
             <a href="https://linkedin.com" class="socialLink"><img src="images/linkedin.jpg" alt="linkedin"></a>            
         </div>
-        <div id="currentDate" class="dateHeader">
+        <!-- <div id="currentDate" class="dateHeader">
             Todays Date Here
-        </div>    
-        <div class="banner" id="banner"></div>
+        </div>     -->
     </header>   
     
     <nav>
@@ -60,11 +59,11 @@
             </div>
         </article>
         <article class="grid--CostalInfo">
-            <h3>Costal Information</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, neque reprehenderit numquam laborum et atque impedit incidunt dolor! Nemo sunt quisquam exercitationem vel, dolorem impedit optio tempora ducimus atque sint dolor consequatur architecto inventore deleniti saepe perferendis culpa vitae voluptatum, quis assumenda delectus fuga explicabo! Magnam ducimus eum voluptates placeat. <a href="#">more Info ...</a></p>
+            <h3>Ventura Coastal Information</h3>
+            <p>Ventura is a California coastal city, northwest of Los Angeles. It’s known for its beaches, like San Buenaventura State Beach, with long, wooden Ventura Pier. Surfer's Point is popular for surfing and windsurfing. Landmarks on downtown’s Main Street include the Mission San Buenaventura, with its 1809 church. Boats depart Ventura Harbor for Channel Islands National Park, a habitat for rare island foxes and scrub jays. ― Google            </p>
         </article>
         <article class="grid--weather">
-            <h3>Weather</h3>
+            <h3><span id="weatherCity"></span>Weather</h3>
             <div class="weather-grid">
                 <picture class="image">
                     <img id="weather-icon" src="images/noweather.png" alt="cloudy day">
@@ -79,7 +78,10 @@
         </article>
         <article class="grid--contact">
             <h3>Business Contact Information</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eligendi. Eaque perspiciatis laudantium ullam nulla, numquam tempore doloribus! Voluptas voluptate sequi praesentium ipsum quae at est ea tenetur laudantium quos molestias eveniet ad, ducimus, vero ipsam. Tempora ad unde ea et nobis magnam ducimus? Quibusdam autem mollitia impedit eaque facilis.!</p>
+            <div class="locationPhone"><p>Call us at: <a href="tel:202-762-1401">202-762-1401</a></p></div>
+            <div class="location">
+                <p>Location at: <a href="https://goo.gl/maps/PfnCaNga37A7mcRm8">735 S Petit Ave, Ventura, CA 93003</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.9232031610627!2d-119.17705208445115!3d34.27601048054556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e84cd21206d08b%3A0x45eb4fb4c74e47e8!2s735%20S%20Petit%20Ave%2C%20Ventura%2C%20CA%2093004!5e0!3m2!1sen!2sus!4v1671074385764!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
         </article>
     </main>
     
